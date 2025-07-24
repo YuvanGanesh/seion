@@ -231,7 +231,7 @@ body {
 }
 
 .btn-aquamarine {
-  background: linear-gradient(135deg, #4ef0e7 0%, #2ec4b6 60%, #0b868b 100%);
+  background: linear-gradient(135deg, #059669 0%, #0891b2 100%);
   color: white;
   border: none;
   box-shadow: 0 4px 20px rgba(46, 196, 182, 0.15);
@@ -241,11 +241,17 @@ body {
     transform 0.2s cubic-bezier(0.4,0,0.2,1);
   will-change: transform, box-shadow;
 }
+.dark .btn-aquamarine {
+  background: linear-gradient(135deg, #4ef0e7 0%, #2ec4b6 60%, #0b868b 100%);
+}
 .btn-aquamarine:hover, .btn-aquamarine:focus {
-  background: linear-gradient(135deg, #5fffe7 0%, #3ed4c6 60%, #1b969b 100%);
+  background: linear-gradient(135deg, #0cbf8a 0%, #1ecbe2 100%);
   box-shadow: 0 8px 32px rgba(46, 196, 182, 0.25), 0 2px 8px rgba(0,0,0,0.08);
   transform: translateY(-2px) scale(1.04);
   outline: none;
+}
+.dark .btn-aquamarine:hover, .dark .btn-aquamarine:focus {
+  background: linear-gradient(135deg, #5fffe7 0%, #3ed4c6 60%, #1b969b 100%);
 }
 
 .text-aquamarine-gradient {
