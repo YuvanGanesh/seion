@@ -28,10 +28,10 @@ body {
 }
 
 .dark body {
-  background: radial-gradient(circle at 25% 40%, #1de9b6 0%, #0d2b3a 60%, #0a1922 100%);
-  background-attachment: fixed;
+  background: url('/dark-blur-bg.png'), radial-gradient(circle at 25% 40%, #1de9b6 0%, #0d2b3a 60%, #0a1922 100%);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
 }
 
@@ -242,7 +242,7 @@ body {
   will-change: transform, box-shadow;
 }
 .dark .btn-aquamarine {
-  background: linear-gradient(135deg, #4ef0e7 0%, #2ec4b6 60%, #0b868b 100%);
+  background: linear-gradient(135deg, #0d2b3a 0%, #0891b2 60%, #059669 100%);
 }
 .btn-aquamarine:hover, .btn-aquamarine:focus {
   background: linear-gradient(135deg, #0cbf8a 0%, #1ecbe2 100%);
