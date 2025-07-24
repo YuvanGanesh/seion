@@ -8,28 +8,22 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ darkMode }) => {
   const leadership = [
     {
-      name: 'Sarah Chen',
-      role: 'Chief Executive Officer',
-      bio: 'Former VP of AI at Microsoft with 15+ years in enterprise technology.',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400'
+      name: 'Showmik Kumaar.R',
+      role: 'CEO & Founder',
+      bio: 'Visionary leader with 15+ years of experience in digital transformation and AI innovation. Drives strategic growth and technological excellence across all business verticals.',
+      image: 'https://randomuser.me/api/portraits/men/32.jpg'
     },
     {
-      name: 'Marcus Rodriguez',
-      role: 'Chief Technology Officer',
-      bio: 'Ex-Google AI researcher, PhD in Machine Learning from Stanford.',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400'
+      name: 'Prithivi Raj.T',
+      role: 'COO & Co-Founder',
+      bio: 'Operations expert specializing in scaling digital solutions and optimizing business processes. Ensures seamless delivery of complex enterprise projects.',
+      image: 'https://randomuser.me/api/portraits/men/33.jpg'
     },
     {
-      name: 'Dr. Emily Watson',
-      role: 'Head of AI Research',
-      bio: 'Published researcher with 50+ papers in AI and automation.',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'David Kim',
-      role: 'VP of Enterprise Solutions',
-      bio: '20+ years leading digital transformation at Fortune 100 companies.',
-      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400'
+      name: 'Ganesh.K',
+      role: 'CTO',
+      bio: 'Technology architect with deep expertise in AI/ML, cloud infrastructure, and emerging technologies. Leads technical innovation and engineering excellence.',
+      image: 'https://randomuser.me/api/portraits/men/34.jpg'
     }
   ];
 
@@ -149,37 +143,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
         </div>
 
         {/* Achievements */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {achievements.map((achievement, index) => {
-            const IconComponent = achievement.icon;
-            return (
-              <div
-                key={index}
-                className={`p-6 rounded-2xl text-center ${
-                  darkMode ? 'bg-slate-800' : 'bg-slate-50'
-                }`}
-              >
-                <div className="inline-flex p-3 rounded-xl bg-blue-600 mb-4">
-                  <IconComponent className="w-6 h-6 text-white" />
-                </div>
-                <h4 className={`text-lg font-bold mb-4 ${
-                  darkMode ? 'text-white' : 'text-slate-900'
-                }`}>
-                  {achievement.title}
-                </h4>
-                <ul className="space-y-2">
-                  {achievement.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className={`text-sm ${
-                      darkMode ? 'text-slate-400' : 'text-slate-600'
-                    }`}>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
+        {/* The achievements section with four cards has been removed as requested. */}
 
         {/* Company Stats */}
         <div className={`mt-20 p-12 rounded-2xl text-center ${

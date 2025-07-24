@@ -321,3 +321,10 @@ body {
   box-shadow: 0 8px 32px rgba(16, 30, 54, 0.16);
   transform: translateY(-4px) scale(1.02);
 }
+
+.contact-gradient-box {
+  background: linear-gradient(135deg, #059669 0%, #0891b2 100%);
+}
+.dark .contact-gradient-box {
+  background: linear-gradient(135deg, #0d2b3a 0%, #0891b2 60%, #059669 100%);
+}

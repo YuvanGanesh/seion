@@ -257,30 +257,26 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
               return (
                 <div
                   key={index}
-                  className={`p-6 rounded-2xl transition-all duration-300 hover:transform hover:scale-105 ${
-                    darkMode ? 'bg-slate-900' : 'bg-white'
-                  } border ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}
+                  className={
+                    `p-6 rounded-2xl transition-all duration-300 hover:transform hover:scale-105 border-0 shadow-lg` +
+                    ` contact-gradient-box`
+                  }
+                  style={{ color: 'white' }}
                 >
                   <div className="flex items-start">
                     <div className="flex-shrink-0">
-                      <div className="inline-flex p-3 rounded-xl bg-blue-600">
+                      <div className="inline-flex p-3 rounded-xl bg-white/20">
                         <IconComponent className="w-6 h-6 text-white" />
                       </div>
                     </div>
                     <div className="ml-4">
-                      <h4 className={`text-lg font-bold mb-1 ${
-                        darkMode ? 'text-white' : 'text-slate-900'
-                      }`}>
+                      <h4 className="text-lg font-bold mb-1 text-white">
                         {info.title}
                       </h4>
-                      <p className={`text-lg font-semibold mb-1 ${
-                        darkMode ? 'text-blue-400' : 'text-blue-600'
-                      }`}>
+                      <p className="text-lg font-semibold mb-1 text-white">
                         {info.details}
                       </p>
-                      <p className={`text-sm ${
-                        darkMode ? 'text-slate-400' : 'text-slate-600'
-                      }`}>
+                      <p className="text-sm text-white/90">
                         {info.description}
                       </p>
                     </div>

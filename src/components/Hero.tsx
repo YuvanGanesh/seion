@@ -59,27 +59,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
-            {[
-              { value: '500+', label: 'Enterprise Clients' },
-              { value: '98%', label: 'Client Retention' },
-              { value: '$2.5B+', label: 'Revenue Generated' },
-              { value: '24/7', label: 'Expert Support' }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className={`text-3xl font-bold mb-2 ${
-                  darkMode ? 'text-white' : 'text-slate-900'
-                }`}>
-                  {stat.value}
-                </div>
-                <div className={`text-sm ${
-                  darkMode ? 'text-slate-400' : 'text-slate-600'
-                }`}>
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
+          {/* The stats grid has been removed as requested. */}
         </div>
       </div>
 
