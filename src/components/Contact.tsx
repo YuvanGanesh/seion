@@ -287,7 +287,9 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
 
             {/* Quick Access Panel */}
             <div className={`p-6 rounded-2xl ${
-              darkMode ? 'bg-gradient-to-r from-blue-900 to-blue-800' : 'bg-gradient-to-r from-blue-50 to-blue-100'
+              darkMode
+                ? 'bg-gradient-to-br from-blue-600 via-slate-800 to-slate-900'
+                : 'bg-gradient-to-br from-blue-100 via-blue-50 to-white'
             }`}>
               <h4 className={`text-lg font-bold mb-4 ${
                 darkMode ? 'text-white' : 'text-slate-900'
@@ -304,11 +306,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
                   <a
                     key={index}
                     href={link.href}
-                    className={`px-4 py-2 text-sm font-medium rounded-lg text-center transition-colors ${
-                      darkMode 
-                        ? 'bg-slate-800 text-slate-300 hover:bg-slate-700' 
-                        : 'bg-white text-slate-700 hover:bg-slate-50'
-                    }`}
+                    className={`px-4 py-2 text-sm font-medium rounded-lg text-center transition-colors btn-aquamarine`}
                   >
                     {link.label}
                   </a>
